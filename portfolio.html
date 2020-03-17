@@ -1,0 +1,557 @@
+<!--TO DO-->
+<!--REDO IMGS IN PORTFOLIO TO CAROUSEL TO VIEW IMGS BETTER/EASIER-->
+<!--CLEAN UP CODE IN HTML, CSS, JS, IMGS FILES-->
+<!--TRANSITION TO ANGULAR CLI-->
+<!--SPEED UP LOADING TIME-->
+<!--FIX CONTACT ME-->
+<!--USE/CREATE SINGLE-PORTFOLIO AS SCROLL THROUGH LIST OF ALL WORK-->
+<!--CHANGE TXT AND BTN STYLING TO CHECK OUT PARTICULAR PORTFOLIO-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Taylor Pettingill</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="//db.onlinewebfonts.com/c/65923d225f2e78842d14d51023161b8e?family=HWT+Artz" rel="stylesheet"
+        type="text/css" />
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="hamburger-menu">
+            <div class="menu-icon">
+                <img id="menu" src="images/dots-menu-gray.png" alt="menu icon">
+            </div>
+
+            <div class="menu-close-icon">
+                <img src="images/x.png" alt="menu close icon">
+            </div>
+        </div>
+    </header>
+
+    <nav class="site-navigation flex flex-column justify-content-between">
+        <ul class="main-menu flex flex-column justify-content-center">
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+
+        <div class="social-profiles">
+            <ul class="flex justify-content-start justify-content-lg-center align-items-center">
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/taylorpettingill/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="nav-bar-sep d-lg-none"></div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="hero-content">
+                <h1 id="hero-h1">Hello<span id="dot">.</span></h1>
+                <h1 id="hero-h1">I'm <span id="dot">Taylor Pettingill</span></h1>
+
+                <div id="container">
+                    <div id="text"></div>
+                    <div id="cursor"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PORTFOLIO SECTION-->
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+
+                <!--FITBIT SIMPLE CLOCK-->
+
+                <div class="col-12 col-lg-4 col-md-3">
+                    <div class="portfolio-content">
+                        <figure class="img-container">
+                            <img id="gallery-img" src="images/smart-watch/FItbit-Watch-Arm.png" />
+                        </figure>
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>Fitbit Simple Clock</h3>
+                            <ul class="flex flex-wrap justify-content-center">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#watch">Check it out</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outer-container">
+
+                    <div class="modal fade" id="watch" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="single-portfolio">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="featured-img">
+                                                    <figure>
+                                                        <img src="images/smart-watch/Fitbit-SimpleClock-Faces.png"
+                                                            alt="">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8">
+                                                <div class="content-area">
+                                                    <header class="entry-header">
+                                                        <h1>Fitbit Simple Clock</h1>
+                                                    </header>
+
+                                                    <div class="entry-content">
+                                                        <p>
+                                                            Simple analog clock with black background.
+                                                            Scrolling list in the center of the screen displays time,
+                                                            date, heart rate, calories, and steps. <br><br>
+                                                            Developed using the Fitbit OS Simulator and online Developer
+                                                            tools.<br><br>
+                                                            Designed using Sketch and Invision.
+                                                        </p>
+                                                        <div class="install-iphone">
+                                                            <div class="row">
+                                                                <div class="col-2">
+                                                                    <img src="images/Iphone-icon@2x.png" alt="">
+                                                                </div>
+                                                                <p>Available to <a
+                                                                        href="https://gallery.fitbit.com/details/4dad516e-b13d-4a15-b5ab-2a96168213e5">install</a>
+                                                                    from<br>
+                                                                    the Fitbit mobile app</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <aside class="col-12 col-lg-3 offset-lg-1">
+                                                <div class="entry-meta">
+                                                    <div class="posted-date">
+                                                        <label>Date</label>
+
+                                                        <span class="date-format"><a href="#">January, 2020</a></span>
+                                                    </div>
+
+                                                    <div class="post-category">
+                                                        <label>Category</label>
+                                                        <span><a href="#">Smart Watch</a></span>
+                                                    </div>
+
+                                                    <div class="posted-tags">
+                                                        <label>tags</label>
+                                                        <span><a href="#">Analog</a>, <a href="#">Tracking</a>, <a
+                                                                href="#">Fitness</a></span>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--GYM APP-->
+
+                <div class="col-12 col-lg-4 col-md-3">
+                    <div class="portfolio-content">
+                        <figure class="img-container">
+                            <img id="gallery-img" src="images/GymApp-Showpage.png" />
+                        </figure>
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>Gym App</h3>
+                            <ul class="flex flex-wrap justify-content-center">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#gym">Don't be shy</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outer-container">
+
+                    <div class="modal fade" id="gym" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="single-portfolio">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="featured-img">
+                                                    <figure>
+                                                        <img src="images/GymApp-Screens@2x.png" alt="">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8">
+                                                <div class="content-area">
+                                                    <header class="entry-header">
+                                                        <h1>Gym App</h1>
+                                                    </header>
+
+                                                    <div class="entry-content">
+                                                        <p>
+                                                            The Gym App Concept allows users to create an acccount
+                                                            and find gyms nearby. When the user finds a gym, he/she
+                                                            can get directions, view gym details, and read customer
+                                                            reviews.<br><br>
+                                                            Designed in Sketch, AdobeXD, Invision, Axure, and Photoshop.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <aside class="col-12 col-lg-3 offset-lg-1">
+                                                <div class="entry-meta">
+                                                    <div class="posted-date">
+                                                        <label>Date</label>
+
+                                                        <span class="date-format"><a href="#">October 2019</a></span>
+                                                    </div>
+
+                                                    <div class="post-category">
+                                                        <label>Category</label>
+                                                        <span><a href="#">iOS App</a></span>
+                                                    </div>
+
+                                                    <div class="posted-tags">
+                                                        <label>tags</label>
+                                                        <span><a href="#">GPS</a>, <a href="#">Fitness</a></span>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--BIRDBOX-->
+
+                <div class="col-12 col-lg-4 col-md-3">
+                    <div class="portfolio-content">
+                        <figure class="img-container">
+                            <img id="gallery-img" src="images/Birdbox-showpage@2x.png" />
+                        </figure>
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>Birdbox</h3>
+                            <ul class="flex flex-wrap justify-content-center">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#birdbox">See more</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outer-container">
+
+                    <div class="modal fade" id="birdbox" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="single-portfolio">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="featured-img">
+                                                    <figure>
+                                                        <img src="images/Birdbox-screens@2x.png" alt="">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8">
+                                                <div class="content-area">
+                                                    <header class="entry-header">
+                                                        <h1>Birdbox</h1>
+                                                    </header>
+
+                                                    <div class="entry-content">
+                                                        <p>
+                                                            Birdbox.com is a up and coming new business that will
+                                                            transform the process of renting. <br><br>
+                                                            Developed in Angular CLI, React, JavaScript, PHP, SaaS,
+                                                            HTML, CSS, and jQuery. <br><br>
+                                                            Designed in Sketch, Adobe XD, Axure, and Illustrator.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <aside class="col-12 col-lg-3 offset-lg-1">
+                                                <div class="entry-meta">
+                                                    <div class="posted-date">
+                                                        <label>Date</label>
+
+                                                        <span class="date-format"><a href="#">August, 2019</a></span>
+                                                    </div>
+
+                                                    <div class="post-category">
+                                                        <label>Category</label>
+                                                        <span><a href="#">Real Estate</a></span>
+                                                    </div>
+
+                                                    <div class="posted-tags">
+                                                        <label>tags</label>
+                                                        <span><a href="#">Renting</a>, <a href="#">Blindfolds</a>, <a
+                                                                href="#">Travel</a></span>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- STORYTELLER APP-->
+
+                <div class="col-12 col-lg-4 col-md-3">
+                    <div class="portfolio-content">
+                        <figure class="img-container">
+                            <img id="gallery-img" src="images/storyteller-loading@2x.png" />
+                        </figure>
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>Storyteller NativeScript App</h3>
+                            <ul class="flex flex-wrap justify-content-center">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#story-teller">Take a peak</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outer-container">
+
+                    <div class="modal fade" id="story-teller" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="single-portfolio">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="featured-img">
+                                                    <figure>
+                                                        <img src="images/Storyteller-App@2x.png" alt="">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8">
+                                                <div class="content-area">
+                                                    <header class="entry-header">
+                                                        <h1>Storyteller NativeScript App</h1>
+                                                    </header>
+
+                                                    <div class="entry-content">
+                                                        <p>
+                                                            The Storyteller Application allows for users to become part
+                                                            of a community by
+                                                            channeling through the concept of imagination and writing.
+                                                            The users read what’s
+                                                            already been written and write more to continue the
+                                                            story.<br><br>
+                                                            Developed using the NativeScript framework using JavaScript,
+                                                            Angular.js, and PHP
+                                                            in the backend. While the frontend consisted of HTML, CSS,
+                                                            and jQuery.<br><br>
+                                                            Designed in Sketch, Invision, Axure, and Photoshop
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <aside class="col-12 col-lg-3 offset-lg-1">
+                                                <div class="entry-meta">
+                                                    <div class="posted-date">
+                                                        <label>Date</label>
+
+                                                        <span class="date-format"><a href="#">March, 2019</a></span>
+                                                    </div>
+
+                                                    <div class="post-category">
+                                                        <label>Category</label>
+                                                        <span><a href="#">NativeScript App</a></span>
+                                                    </div>
+
+                                                    <div class="posted-tags">
+                                                        <label>tags</label>
+                                                        <span><a href="#">IOS</a>, <a href="#">Android</a>, <a
+                                                                href="#">Social Media</a></span>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--SHOP TEMPLATE MOCKUP-->
+
+                <div class="col-12 col-lg-4 col-md-3">
+                    <div class="portfolio-content">
+                        <figure class="img-container">
+                            <img id="gallery-img" src="images/Shoptemplate-showpage.png" />
+                        </figure>
+                        <div class="entry-content flex flex-column align-items-center justify-content-center">
+                            <h3>Shop Template Mockup</h3>
+                            <ul class="flex flex-wrap justify-content-center">
+                                <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+                                    data-target="#shop">Take a gander</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="outer-container">
+
+                    <div class="modal fade" id="shop" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="single-portfolio">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="featured-img">
+                                                    <figure>
+                                                        <img src="images/ShopTemplate-screens@2x.png" alt="">
+                                                    </figure>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-lg-8">
+                                                <div class="content-area">
+                                                    <header class="entry-header">
+                                                        <h1>Shop Template Mockup</h1>
+                                                    </header>
+
+                                                    <div class="entry-content">
+                                                        <p>
+                                                            Basic shop template used for E-commerce websites to have
+                                                            customers browse, shop, and buy items at ease.<br><br>
+                                                            Designed in Sketch, Invision and Photoshop.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <aside class="col-12 col-lg-3 offset-lg-1">
+                                                <div class="entry-meta">
+                                                    <div class="posted-date">
+                                                        <label>Date</label>
+
+                                                        <span class="date-format"><a href="#">December, 2019</a></span>
+                                                    </div>
+
+                                                    <div class="post-category">
+                                                        <label>Category</label>
+                                                        <span><a href="#">E-Commerce</a></span>
+                                                    </div>
+
+                                                    <div class="posted-tags">
+                                                        <label>tags</label>
+                                                        <span><a href="#">Website</a>, <a href="#">Template</a>, <a
+                                                                href="#">Shop</a></span>
+                                                    </div>
+                                                </div>
+                                            </aside>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- COMING SOON -->
+
+                <div class="col-12 col-lg-4 col-md-3">
+                    <div class="portfolio-content">
+                        <figure class="img-container">
+                            <img id="gallery-img" src="images/Coming-soon-screen – seafoam@2x.png" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/CSSRulePlugin.js"></script>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+
+</html>
